@@ -1,0 +1,46 @@
+{
+    "products": [
+        {
+            "name": "Dżem Łowicz Truskawka z pożeczką",
+            "brand": "Łowicz",
+            "massNetto": 280, 
+            "massBrutto": 0,
+            "wartoscEnergetyczna": 142,
+            "tluszcze": 0.5,
+            "nasycone": 0.1, 
+            "weglowodany": 34,
+            "cukry": 34,
+            "bialko": 0.5,
+            "sol": 0,
+            "barcode": 5903978396357
+        },
+        {
+            "name": "Jogurt Augustowski truskawkowy",
+            "brand": "Mlekopol",
+            "massNetto": 350, 
+            "massBrutto": 0,
+            "wartoscEnergetyczna": 88,
+            "tluszcze": 2.2,
+            "nasycone": 1.4, 
+            "weglowodany": 14,
+            "cukry": 14,
+            "bialko": 3.1,
+            "sol": 0.1,
+            "barcode": 5900820008888
+        },
+        {
+            "name": "Zott Jogobella jogurt owoce leśne",
+            "brand": "Jogobella",
+            "massNetto": 400, 
+            "massBrutto": 0,
+            "wartoscEnergetyczna": 88,
+            "tluszcze": 2.7,
+            "nasycone": 1.8, 
+            "weglowodany": 11.2,
+            "cukry": 10.7,
+            "bialko": 3.5,
+            "sol": 0.15,
+            "barcode": 4014500509860
+        }
+    ] 
+}
