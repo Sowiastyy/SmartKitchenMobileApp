@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
-import BarcodeScanner from './assets/BarcodeScanner';
+import ScannerScreen from './assets/ScannerScreen';
 import { View, Button, Text } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -58,7 +58,7 @@ const MyStack = () => {
           {(props) => <HomeScreen {...props} products={products} />}
         </Stack.Screen>
         <Stack.Screen name="Scan">
-          {(props) => <BarcodeScanner {...props} products={products} setProducts={setProducts} />}
+          {(props) => <ScannerScreen {...props} products={products} setProducts={setProducts} />}
         </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>

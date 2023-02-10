@@ -3,12 +3,11 @@ import React, { useState, useEffect } from 'react';
 import { Text, View, StyleSheet, Button } from 'react-native';
 import { BarCodeScanner } from 'expo-barcode-scanner';
 import productData from '../product_data.json'
-import Connection from '../Connection';
-export default function BarcodeScanner(props) {
+import { connection, input } from '../Connection';
+export default function ScannerScreen(props) {
     const [hasPermission, setHasPermission] = useState(null);
     const [scanned, setScanned] = useState(false);
     const [text, setText] = useState('Not yet scanned')
-    var connection = new Connection();
     const askForCameraPermission = () => {
       (async () => {
         const { status } = await BarCodeScanner.requestPermissionsAsync();
@@ -42,7 +41,7 @@ export default function BarcodeScanner(props) {
             barcode:barcode
           }
           props.setProducts([...props.products, product])
-          connection.input(barcode);
+          input(barcode);
           return productRepeated=true
         }
         
